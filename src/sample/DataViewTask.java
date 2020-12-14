@@ -31,7 +31,11 @@ public class DataViewTask extends Task {
 
     @Override
     protected void succeeded() {
-        textArea.appendText(data+System.lineSeparator());
+        if (textArea.getText().split("\n").length >= 100) {
+            textArea.clear();
+            textArea.insertText(0, data + System.lineSeparator());
+        }
+        textArea.insertText(textArea.getLength(), data + System.lineSeparator());
         super.succeeded();
     }
 

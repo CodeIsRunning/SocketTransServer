@@ -29,7 +29,7 @@
         </ChoiceBox>
       <Label layoutX="312.0" layoutY="31.0" prefHeight="23.0" prefWidth="57.0" text="bufSize" />
         <Button fx:id="endServer" disable="true" layoutX="564.0" layoutY="23.0" mnemonicParsing="false" onAction="#endServe" prefHeight="28.0" prefWidth="87.0" text="endService" />
-      <Button fx:id="cleanTextArea" layoutX="45.0" layoutY="30.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="75.0" text="清除日志" onAction="#cleanTextArea"/>
+      <Button fx:id="cleanTextArea" layoutX="45.0" layoutY="30.0" mnemonicParsing="false" onAction="#cleanTextArea" prefHeight="23.0" prefWidth="75.0" text="清除日志" />
 
     </children>
 </Pane>
