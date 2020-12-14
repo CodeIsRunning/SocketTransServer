@@ -245,7 +245,7 @@ public class Controller {
                     long donelen = 0;
 
                     //接入地址
-                    new Thread(new DataViewTask(dataView, serverSocket.getInetAddress().getHostAddress() + "---已连接")).start();
+                    new Thread(new DataViewTask(dataView, socket.getInetAddress().getHostAddress() + "---已连接")).start();
 
                     DataInputStream dis = new DataInputStream(socket.getInputStream());
 
